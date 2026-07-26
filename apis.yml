@@ -1,7 +1,29 @@
 aid: fincompare
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/fincompare.png
 name: Fincompare
-description: Fincompare is a company surfaced as a portfolio company of speedinvest and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Fincompare (now operating under the Fynbiz brand alongside Compeon) is a
+  Berlin-based digital financing marketplace for small and medium-sized
+  enterprises. Founded in 2017, the platform lets businesses request, compare,
+  and close financing offers from 100+ banks and alternative lenders in one
+  place, covering business loans, leasing, factoring, goods and warehouse
+  financing, real-estate financing, and revenue-based financing. Fincompare
+  connects lenders such as ING, VR Smart Finanz, and iwoca directly through
+  bank API integrations to automate credit decisions. The company was acquired
+  by a consortium of DZ Bank, several Volksbanken, and Atruvia in 2021.
+  Fincompare operates a customer-facing SME financing product; it does not
+  publish a public developer API or documentation surface.
 url: https://raw.githubusercontent.com/api-evangelist/fincompare/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,12 +33,41 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- Financing
+- SME Lending
+- Fintech
+- Loans
+- Comparison Marketplace
+- Banking
+- Factoring
+- Leasing
+- Germany
 apis: []
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+common:
+- type: DomainSecurity
+  url: security/fincompare-domain-security.yml
+- type: Website
+  url: https://fincompare.de/
+- type: SignUp
+  url: https://anfrage.fincompare.de
+- type: Login
+  url: https://app.fincompare.de/account/login
+- type: Support
+  url: https://fincompare.de/faqs
+- type: TermsOfService
+  url: https://fincompare.de/agb
+- type: PrivacyPolicy
+  url: https://fincompare.de/datenschutz
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
